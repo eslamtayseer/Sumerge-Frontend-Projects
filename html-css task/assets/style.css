@@ -1,0 +1,73 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background: url("background.jpg") no-repeat center center;
+    background-size: 100% auto;
+}
+
+.app {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    margin: 80px auto;
+    color: #4F759B;
+    background-color: whitesmoke;
+    border-radius: 2%;
+    box-shadow: black;
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    /* width: 100%; */
+}
+
+hr {
+    border-top: 2px dotted #38536B;
+}
+
+.signup-form {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.signup-form * {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 20px;
+}
+
+.signup-labels {
+    width: 150px;
+}
+
+input {
+    border: 1px solid #38536B;
+    padding: 2px 4px;
+    width: 250px;
+}
+
+#submit {
+    padding: 5px 10px;
+    border: 1px solid #4F759B;
+    color: #4F759B;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+}
+
+#submit:hover {
+    background-color: #4F759B;
+    color: whitesmoke;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

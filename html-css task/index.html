@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Belly Filly
+    </title>
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h2>Sign Up for the full Belly Filly experience</h2>
+            <hr/>
+        </header>
+
+        <div class="signup-form">
+            <form action="">
+                <label class="signup-labels" for="name">Name </label>
+                <input id="fname" type="text" name="name" required>
+
+                <br>
+                <label class="signup-labels" for="email">Email </label>
+
+                <input id="email" type="email" name="email" placeholder="example@domain.com" required>
+                <br>
+                <label class="signup-labels" for="mobile">Phone Number</label>
+
+                <input id="mobile" type="text" name="mobile" pattern="01[0-9]{9}" minlength="11" maxlength="11" placeholder="ex: 01005001234" required>
+                <br>
+                <label class="signup-labels" for="password">Password </label>
+
+                <input id="password" type="password" name="password" minlength="8" maxlength="20" required>
+                <br>
+                <label class="signup-labels" for="address">Your Address </label>
+
+                <input id="address" type="text" name=address>
+                <br>
+
+                <input id="submit" type="submit" value="Sign Up">
+                <br>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
