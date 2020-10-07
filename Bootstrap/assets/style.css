@@ -1,0 +1,99 @@
+    body {
+        background: url("images/background.jpg") no-repeat center center;
+        background-size: cover;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .navbar-custom .navbar-brand,
+    .custome-link {
+        color: #4F759B;
+    }
+    
+    .card-header {
+        text-align: center;
+        /* margin: 10px auto;
+        position: relative; */
+        /* margin-top: 10px; */
+    }
+    /* .Orders {
+    width: fit-content;
+    margin: 10px auto;
+} */
+    /*     
+    .items {
+        display: inline-block;
+    }
+     */
+    
+    .list-unstyled li {
+        border-bottom: 1px dashed rgb(0, 0, 0);
+    }
+    
+    #bottom-item {
+        border-bottom: 0;
+    }
+    
+    .app {
+        width: 35%;
+        /* margin: 80px auto; */
+        color: #4F759B;
+        background-color: rgba(245, 245, 245, 0.6);
+        border-radius: 1%;
+        box-shadow: black;
+        /* padding: 40px 20px; */
+    }
+    
+    .order-images {
+        width: 25%;
+        height: auto;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 200px; */
+        /* border: 3px solid green; */
+    }
+    
+    .number-items {
+        width: 30%;
+        display: inline-block;
+        margin-left: 5%;
+        font-size: .8em;
+    }
+    
+    .custome-btn {
+        /* padding: 5px 10px; */
+        border-color: #4F759B;
+        color: #4F759B;
+        background-color: white;
+        /* width: fit-content;
+        height: fit-content;
+        border-radius: 2px; */
+    }
+    
+    #place-order-btn {
+        /* margin-top: 10px; */
+        font-size: 1.2em;
+    }
+    
+    .custome-btn:hover,
+    .custome-btn:focus,
+    .custome-btn:active {
+        background-color: #4F759B;
+        color: white;
+        border-color: #4F759B;
+    }
+    
+    #jumbotron {
+        margin-bottom: 0;
+    }
+    /* .jumbotron .container * {
+        display: block;
+    } */
+    
+    #app-store-im {
+        width: 15%;
+        height: auto;
+    }
