@@ -4,7 +4,7 @@ function CalculatePrice() {
     for (i = 0; i < elements.length; i++) {
         var itemprice = Number(elements[i].querySelector(".item-price").textContent)
         console.log(elements[i].querySelector(".item-price").textContent)
-        var quantity = Number(elements[i].querySelector(".Quantity").textContent)
+        var quantity = Number(elements[i].querySelector(".number-items").value)
         price += itemprice * quantity
 
 
