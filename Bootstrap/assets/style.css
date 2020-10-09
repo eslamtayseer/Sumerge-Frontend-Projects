@@ -6,7 +6,12 @@
     
     .navbar-custom .navbar-brand,
     .custome-link {
-        color: #4F759B;
+        color: #4F759B !important;
+    }
+    
+    .custome-link:hover,
+    .navbar-brand:hover {
+        color: #1f2e3e !important;
     }
     
     .card-header {
@@ -57,7 +62,7 @@
     }
     
     .number-items {
-        width: 25%;
+        width: 30%;
         display: inline-block;
         margin-left: 5%;
         font-size: .8em;
@@ -96,4 +101,26 @@
     #app-store-im {
         width: 15%;
         height: auto;
+    }
+    
+    .icon {
+        width: 100%;
+        height: auto;
+        /* display: inline-block;
+        margin-right: 10%; */
+    }
+    
+    .footer {
+        background-color: #17232e;
+        color: whitesmoke;
+    }
+    
+    .footer-row a:link,
+    .footer-row a:visited {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    .footer-row {
+        background-color: #273a4d;
     }
