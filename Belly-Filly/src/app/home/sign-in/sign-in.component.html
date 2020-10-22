@@ -1,0 +1,32 @@
+<nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top py-2">
+    <a class="navbar-brand">Belly Filly</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <div class="collapse navbar-collapse" id="navbarText"> -->
+    <!-- <div class="navbar-nav ">
+
+        </div> -->
+    <form class="ml-auto" style="margin-right: 5%;">
+        <div class="row  mr-2" style="width: 120%;">
+            <div class="col-md-5">
+                <label for="email">Email:</label>
+                <input id="email" class="form-control mr-2" name="email" type="email" placeholder="example@domain.com" [(ngModel)]="email">
+                <!-- <button class="btn custome-btn btn-outline-primary my-2 " type="submit">Search</button> -->
+            </div>
+            <div class="col-md-5">
+                <label for="password">Password:</label>
+                <input id="password" class="form-control mr-2" name="password" type="password" aria-label="password" [(ngModel)]="password">
+            </div>
+            <div class="col-md-2">
+                <!-- <label for=""></label> -->
+                <br>
+
+                <button class="btn custome-btn btn-outline-primary mt-2" (click)="onLogIn()" type="button">Log In</button>
+            </div>
+        </div>
+
+    </form>
+
+    <!-- </div> -->
+</nav>

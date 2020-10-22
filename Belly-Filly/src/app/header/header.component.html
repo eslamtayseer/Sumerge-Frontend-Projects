@@ -1,0 +1,28 @@
+<nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top py-0">
+    <a class="navbar-brand">Belly Filly</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link custome-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custome-link " routerLink="/shoppinglist"> Shopping List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link custome-link" routerLink="/checkout">Cart</a>
+            </li>
+        </ul>
+        <form class="form-inline ">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn custome-btn btn-outline-primary my-2 " type="submit">Search</button>
+        </form>
+
+        <span class="navbar-text navbar-span ml-sm-2 ">
+        Hello {{name}}!
+        </span>
+
+    </div>
+</nav>

@@ -1,0 +1,35 @@
+#jumbotron {
+    margin-bottom: 0;
+}
+
+
+/* .jumbotron .container * {
+    display: block;
+} */
+
+#app-store-im {
+    width: 15%;
+    height: auto;
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    /* display: inline-block;
+    margin-right: 10%; */
+}
+
+.footer {
+    background-color: #17232e;
+    color: whitesmoke;
+}
+
+.footer-row a:link,
+.footer-row a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-row {
+    background-color: #273a4d;
+}

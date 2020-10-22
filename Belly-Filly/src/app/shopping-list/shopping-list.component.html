@@ -1,0 +1,57 @@
+<!-- <div class="row"> -->
+<!-- <div class="row">
+    <div> -->
+
+<div class="app py-4 px-3 col-md-7 col-sm-10 col-lg-4 col-10">
+
+    <div class="card shadow mb-3 ">
+        <div class="card-header">
+            <h1>
+                Shopping List
+            </h1>
+        </div>
+        <div class="card-body">
+            <div class="Orders">
+                <ul class="list-unstyled" #mealsList>
+                    <li class="media items p-3" *ngFor="let meal of meals;let i= index">
+                        <img src="{{meal.imagePath}}" class="mr-3 order-images" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">{{meal.name}}: <span class="item-price">{{meal.price}}</span>LE</h5>
+                            <hr>
+
+                            <p>Quantity:<input class="form-control number-items" type="number" value="0" min="0" max="99" maxlength="2" size="3" [(ngModel)]="mealQuantities[i]"></p>
+                        </div>
+                    </li>
+                    <!-- <li class="media my-4 items">
+                        <img src="assets/images/burger.png" class="mr-3 order-images" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Medium Cheese Burger: <span class="item-price">150</span>LE</h5>
+                            <hr>
+                            <p>Quantity: <input class="form-control number-items" type="number" value="1" min="1" max="99" maxlength="2" size="3"></p>
+                        </div>
+                    </li>
+                    <li class="media items" id="bottom-item">
+                        <img src="assets/images/Past.png" class="mr-3  order-images" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Red Sauce Pasta: <span class="item-price">50</span>LE</h5>
+                            <hr>
+                            <p>Quantity: <input class="form-control number-items" type="number" value="1" min="1" maxlength="2" size="3"></p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="center">
+        <button id="add-to-cart-btn" class="btn btn-outline-primary custome-btn mt-2" (click)="onAddToCart()">Add to Cart</button>
+        <!-- <button id="checkout-btn" class="btn btn-outline-primary custome-btn mt-2" (click)="onCheckOut()">Go to Checkout</button> -->
+
+    </div>
+    <!-- </div>
+    </div> -->
+
+</div>
+
+<!-- </div> -->

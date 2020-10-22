@@ -1,0 +1,38 @@
+.app {
+    /* width: fit-content; */
+    /* margin: 80px auto; */
+    color: #4F759B;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 1%;
+    box-shadow: black;
+    text-align: center;
+    /* padding: 40px 20px; */
+}
+
+.order-images {
+    width: 25%;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    /* border: 3px solid green; */
+}
+
+.number-items {
+    width: 30%;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: .8em;
+}
+
+.list-unstyled li {
+    border-bottom: 1px dashed rgb(0, 0, 0);
+}
+
+#bottom-item {
+    border-bottom: 0;
+}

@@ -1,0 +1,10 @@
+.navbar-custom .navbar-brand,
+.custome-link,
+.navbar-span {
+    color: #4F759B !important;
+}
+
+.custome-link:hover,
+.navbar-brand:hover {
+    color: #1f2e3e !important;
+}
