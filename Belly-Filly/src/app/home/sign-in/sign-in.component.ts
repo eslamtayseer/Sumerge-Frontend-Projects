@@ -19,6 +19,10 @@ export class SignInComponent implements OnInit {
   }
 
   onLogIn(){
+    if(!this.accountService.validateEmail(this.email)){
+      alert('Please Enter a Valid Email')
+      return
+    }
    var account =this.accountService.checkAccount(this.email,this.password)[0]
    if(account ==undefined) {
      alert('User Not Found')

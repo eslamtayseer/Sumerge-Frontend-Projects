@@ -12,7 +12,7 @@ import { ShoppingCartService } from '../Shared/shopping-cart.service';
 export class ShoppingListComponent implements OnInit {
   meals :Meal[] =this.mealsService.getMeals()
   // @ViewChild('mealsList',{static:true}) mealsList:ElementRef
-  mealQuantities :number[]=[0,0,0,0,0]
+  mealQuantities :string[]=["0","0",'0','0','0']
   constructor(private mealsService:MealsService,private shoppinCartService:ShoppingCartService,private router:Router) { }
 
   ngOnInit(): void {
@@ -30,14 +30,21 @@ export class ShoppingListComponent implements OnInit {
   }
   onAddToCart(){
     for(var i=0;i<this.mealQuantities.length;i++ ){
-      if(this.mealQuantities[i]>0){
-        console.log(this.mealQuantities[i])
-        this.shoppinCartService.addToCart(this.meals[i],this.mealQuantities[i])
+      if(!this.checkForCorrectInput(this.mealQuantities[i])){
+        alert('Please enter a valid number')
+      }
+      if(+this.mealQuantities[i]>0){
+        // console.log(this.mealQuantities[i])
+        this.shoppinCartService.addToCart(this.meals[i],+this.mealQuantities[i])
       }
     }
     this.router.navigate(['/checkout'])
 
   }
+  checkForCorrectInput(input:string){
+    return true //to be done
+  }
+
   // onCheckOut(){
 
   // }

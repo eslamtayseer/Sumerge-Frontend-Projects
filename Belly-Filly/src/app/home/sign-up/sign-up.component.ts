@@ -32,7 +32,11 @@ export class SignUpComponent implements OnInit {
     // if(!this.email.match("^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$")){
     //   alert('Please Enter a Valid Email')
     // }
-    if(!this.email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+    // if(!this.email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+    //   alert('Please Enter a Valid Email')
+    //   return
+    // }
+    if(!this.accountService.validateEmail(this.email)){
       alert('Please Enter a Valid Email')
       return
     }
